@@ -11,7 +11,7 @@ ${USERNAME_PASSOWORD}    secret_sauce
 *** Keywords ***
  Abrir o navegador
      Open Browser     browser=chrome
-     Maximize Browser Window 
+    #  Maximize Browser Window 
 
 
 fechar navegador  
@@ -27,7 +27,10 @@ Quando preencher os dados de login e senha
 Então login realzado com sucesso
     Click Button    locator=//input[contains(@type,'submit')]
 
+E escolher o produto desejado 
+    Click Button    locator=//button[contains(@data-test,'add-to-cart-sauce-labs-backpack')]
+
+E adicionado com sucesso 
+    Click Element    locator=//a[contains(@class,'shopping_cart_link')]    
+
     
-         
-        
-         
