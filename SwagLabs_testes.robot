@@ -2,20 +2,30 @@
 Documentation
 Resource          Swaglabs_resource.robot
 Test Setup        Abrir o navegador
-# Test Teardown     fechar navegador
+Test Teardown     fechar navegador
 
 *** Test Cases ***
 
 Caso de teste 01 - Fazer login
-    [documentation]
+    [documentation]     Nessa keyword é pra abrir o navegador e preencher os dados login e senha
     [Tags]  menus
     Dado que esteja na home page do site
     Quando preencher os dados de login e senha
     Então login realzado com sucesso
 
 Caso de teste 02 - Escolher produto
-    Dado que esteja na home page do site  
+    [Documentation]   Nessa Keyword é pra fazer login, senha e adicionar 1 produto no carrinho 
+    [Tags]     produtos
+    Dado que esteja na home page do site 
     Quando preencher os dados de login e senha 
     Então login realzado com sucesso 
     E escolher o produto desejado
     E adicionado com sucesso     
+Caso de teste 03 - Adicionar todos os produtos
+    [Documentation]    Nessa Keyword é pra fazer login, senha e adicionar todos os produtos no carrinho  
+    [Tags]    produtos 
+    Dado que esteja na home page do site 
+    Quando preencher os dados de login e senha 
+    Então login realzado com sucesso 
+    E adicionar todos os produtos
+    E produtos adicionado com sucesso
