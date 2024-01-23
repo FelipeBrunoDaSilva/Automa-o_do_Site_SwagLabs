@@ -1,68 +1,175 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.1.1 (Python 3.12.1 on win32)" generated="20240119 11:33:01.117" rpa="false" schemaversion="4">
-<suite id="s1" name="Swaglabs Testes" source="C:\Users\Felipe Bruno\Documents\Felipe\Udemy\Projetos_Automação\RobotFramework\SwagLabs\swaglabs_testes.robot">
-<test id="s1-t1" name="Caso de teste 01 - Fazer login" line="9">
+<robot generator="Robot 6.1.1 (Python 3.12.1 on win32)" generated="20240123 11:45:47.236" rpa="false" schemaversion="4">
+<suite id="s1" name="Swaglabs Testes" source="c:\Users\Felipe Bruno\Documents\Felipe\Udemy\Projetos_Automação\RobotFramework\SwagLabs\swaglabs_testes.robot">
+<test id="s1-t1" name="Caso de teste 03 - Adicionar todos os produtos" line="24">
 <kw name=" Abrir o navegador" library="Swaglabs_resource" type="SETUP">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>browser=chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20240119 11:33:01.904" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
-<status status="PASS" starttime="20240119 11:33:01.904" endtime="20240119 11:33:07.966"/>
+<msg timestamp="20240123 11:45:47.707" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<status status="PASS" starttime="20240123 11:45:47.706" endtime="20240123 11:45:51.661"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20240119 11:33:07.966" endtime="20240119 11:33:08.640"/>
+<status status="PASS" starttime="20240123 11:45:51.662" endtime="20240123 11:45:51.885"/>
 </kw>
-<status status="PASS" starttime="20240119 11:33:01.903" endtime="20240119 11:33:08.640"/>
+<status status="PASS" starttime="20240123 11:45:47.705" endtime="20240123 11:45:51.886"/>
 </kw>
 <kw name=" Dado que esteja na home page do site" library="Swaglabs_resource">
 <kw name="Go To" library="SeleniumLibrary">
 <arg>url= ${URL}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20240119 11:33:08.653" level="INFO">Opening url ' https://www.saucedemo.com'</msg>
-<status status="PASS" starttime="20240119 11:33:08.652" endtime="20240119 11:33:09.888"/>
+<msg timestamp="20240123 11:45:51.907" level="INFO">Opening url ' https://www.saucedemo.com'</msg>
+<status status="PASS" starttime="20240123 11:45:51.906" endtime="20240123 11:45:53.041"/>
 </kw>
-<status status="PASS" starttime="20240119 11:33:08.652" endtime="20240119 11:33:09.888"/>
+<status status="PASS" starttime="20240123 11:45:51.905" endtime="20240123 11:45:53.041"/>
 </kw>
 <kw name="Quando preencher os dados de login e senha" library="Swaglabs_resource">
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>locator=//input[contains(@placeholder,'Username')]</arg>
 <arg>text=${Username_LOGIN}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20240119 11:33:09.908" level="INFO">Typing text 'standard_user' into text field '//input[contains(@placeholder,'Username')]'.</msg>
-<status status="PASS" starttime="20240119 11:33:09.907" endtime="20240119 11:33:10.789"/>
+<msg timestamp="20240123 11:45:53.072" level="INFO">Typing text 'standard_user' into text field '//input[contains(@placeholder,'Username')]'.</msg>
+<status status="PASS" starttime="20240123 11:45:53.070" endtime="20240123 11:45:54.498"/>
 </kw>
 <kw name="Input Password" library="SeleniumLibrary">
 <arg>locator=//input[contains(@placeholder,'Password')]</arg>
 <arg>password=${USERNAME_PASSOWORD}</arg>
 <doc>Types the given password into the text field identified by ``locator``.</doc>
-<msg timestamp="20240119 11:33:10.791" level="INFO">Typing password into text field '//input[contains(@placeholder,'Password')]'.</msg>
-<msg timestamp="20240119 11:33:11.066" level="INFO">Temporally setting log level to: NONE</msg>
-<msg timestamp="20240119 11:33:11.309" level="INFO">Log level changed from NONE to INFO.</msg>
-<status status="PASS" starttime="20240119 11:33:10.789" endtime="20240119 11:33:11.309"/>
+<msg timestamp="20240123 11:45:54.500" level="INFO">Typing password into text field '//input[contains(@placeholder,'Password')]'.</msg>
+<msg timestamp="20240123 11:45:54.617" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20240123 11:45:54.762" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20240123 11:45:54.498" endtime="20240123 11:45:54.763"/>
 </kw>
-<status status="PASS" starttime="20240119 11:33:09.906" endtime="20240119 11:33:11.310"/>
+<status status="PASS" starttime="20240123 11:45:53.069" endtime="20240123 11:45:54.763"/>
 </kw>
 <kw name="Então login realzado com sucesso" library="Swaglabs_resource">
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>locator=//input[contains(@type,'submit')]</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20240119 11:33:11.316" level="INFO">Clicking button '//input[contains(@type,'submit')]'.</msg>
-<status status="PASS" starttime="20240119 11:33:11.315" endtime="20240119 11:33:11.776"/>
+<msg timestamp="20240123 11:45:54.780" level="INFO">Clicking button '//input[contains(@type,'submit')]'.</msg>
+<status status="PASS" starttime="20240123 11:45:54.779" endtime="20240123 11:45:55.144"/>
 </kw>
-<status status="PASS" starttime="20240119 11:33:11.314" endtime="20240119 11:33:11.776"/>
+<status status="PASS" starttime="20240123 11:45:54.778" endtime="20240123 11:45:55.144"/>
 </kw>
-<tag>menus</tag>
-<status status="PASS" starttime="20240119 11:33:01.902" endtime="20240119 11:33:11.778"/>
+<kw name="E adicionar todos os produtos" library="Swaglabs_resource">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>locator=//button[contains(@data-test,'add-to-cart-sauce-labs-backpack')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240123 11:45:55.172" level="INFO">Clicking element '//button[contains(@data-test,'add-to-cart-sauce-labs-backpack')]'.</msg>
+<status status="PASS" starttime="20240123 11:45:55.171" endtime="20240123 11:45:55.399"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>locator=//button[contains(@data-test,'add-to-cart-sauce-labs-bike-light')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240123 11:45:55.401" level="INFO">Clicking element '//button[contains(@data-test,'add-to-cart-sauce-labs-bike-light')]'.</msg>
+<status status="PASS" starttime="20240123 11:45:55.400" endtime="20240123 11:45:55.505"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>locator=//button[contains(@data-test,'add-to-cart-sauce-labs-bolt-t-shirt')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240123 11:45:55.507" level="INFO">Clicking element '//button[contains(@data-test,'add-to-cart-sauce-labs-bolt-t-shirt')]'.</msg>
+<status status="PASS" starttime="20240123 11:45:55.506" endtime="20240123 11:45:55.657"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>locator=//button[contains(@data-test,'add-to-cart-sauce-labs-fleece-jacket')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240123 11:45:55.659" level="INFO">Clicking element '//button[contains(@data-test,'add-to-cart-sauce-labs-fleece-jacket')]'.</msg>
+<status status="PASS" starttime="20240123 11:45:55.658" endtime="20240123 11:45:55.760"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>locator=//button[contains(@data-test,'add-to-cart-sauce-labs-onesie')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240123 11:45:55.762" level="INFO">Clicking element '//button[contains(@data-test,'add-to-cart-sauce-labs-onesie')]'.</msg>
+<status status="PASS" starttime="20240123 11:45:55.761" endtime="20240123 11:45:55.870"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>locator=//button[contains(@data-test,'add-to-cart-test.allthethings()-t-shirt-(red)')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240123 11:45:55.872" level="INFO">Clicking element '//button[contains(@data-test,'add-to-cart-test.allthethings()-t-shirt-(red)')]'.</msg>
+<status status="PASS" starttime="20240123 11:45:55.870" endtime="20240123 11:45:55.977"/>
+</kw>
+<status status="PASS" starttime="20240123 11:45:55.169" endtime="20240123 11:45:55.978"/>
+</kw>
+<kw name="E produtos adicionado com sucesso" library="Swaglabs_resource">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>locator=//a[contains(@class,'shopping_cart_link')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240123 11:45:55.990" level="INFO">Clicking element '//a[contains(@class,'shopping_cart_link')]'.</msg>
+<status status="PASS" starttime="20240123 11:45:55.988" endtime="20240123 11:45:56.196"/>
+</kw>
+<status status="PASS" starttime="20240123 11:45:55.987" endtime="20240123 11:45:56.196"/>
+</kw>
+<kw name="E fazer checkout" library="Swaglabs_resource">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>locator=//button[@class='btn btn_action btn_medium checkout_button '][contains(.,'Checkout')]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20240123 11:45:56.211" level="INFO">Clicking button '//button[@class='btn btn_action btn_medium checkout_button '][contains(.,'Checkout')]'.</msg>
+<status status="PASS" starttime="20240123 11:45:56.209" endtime="20240123 11:45:56.607"/>
+</kw>
+<status status="PASS" starttime="20240123 11:45:56.206" endtime="20240123 11:45:56.608"/>
+</kw>
+<kw name="E Preencher First Name, Last Name e Postal Code" library="Swaglabs_resource">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>locator=//input[contains(@placeholder,'First Name')]</arg>
+<arg>text=${Username_LOGIN}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240123 11:45:56.621" level="INFO">Typing text 'standard_user' into text field '//input[contains(@placeholder,'First Name')]'.</msg>
+<status status="PASS" starttime="20240123 11:45:56.620" endtime="20240123 11:45:56.900"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>locator=//input[contains(@placeholder,'Last Name')]</arg>
+<arg>text=${USERNAME_PASSOWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240123 11:45:56.902" level="INFO">Typing text 'secret_sauce' into text field '//input[contains(@placeholder,'Last Name')]'.</msg>
+<status status="PASS" starttime="20240123 11:45:56.900" endtime="20240123 11:45:57.179"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>locator=//input[contains(@placeholder,'Zip/Postal Code')]</arg>
+<arg>password=${POSTAL_CODE}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20240123 11:45:57.181" level="INFO">Typing password into text field '//input[contains(@placeholder,'Zip/Postal Code')]'.</msg>
+<msg timestamp="20240123 11:45:57.376" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20240123 11:45:57.621" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20240123 11:45:57.179" endtime="20240123 11:45:57.621"/>
+</kw>
+<status status="PASS" starttime="20240123 11:45:56.619" endtime="20240123 11:45:57.621"/>
+</kw>
+<kw name="E clicar compra realizada com sucesso" library="Swaglabs_resource">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>locator=//input[contains(@type,'submit')]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20240123 11:45:57.632" level="INFO">Clicking button '//input[contains(@type,'submit')]'.</msg>
+<status status="PASS" starttime="20240123 11:45:57.631" endtime="20240123 11:45:57.855"/>
+</kw>
+<status status="PASS" starttime="20240123 11:45:57.630" endtime="20240123 11:45:57.856"/>
+</kw>
+<kw name="Entao finalizo compra" library="Swaglabs_resource">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>locator=//button[@class='btn btn_action btn_medium cart_button'][contains(.,'Finish')]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20240123 11:45:57.874" level="INFO">Clicking button '//button[@class='btn btn_action btn_medium cart_button'][contains(.,'Finish')]'.</msg>
+<status status="PASS" starttime="20240123 11:45:57.872" endtime="20240123 11:45:58.166"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20240123 11:45:58.417" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-11.png"&gt;&lt;img src="selenium-screenshot-11.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20240123 11:45:58.167" endtime="20240123 11:45:58.418"/>
+</kw>
+<status status="PASS" starttime="20240123 11:45:57.871" endtime="20240123 11:45:58.418"/>
+</kw>
+<doc>Nessa Keyword é pra fazer login, senha e adicionar todos os produtos no carrinho, quando os produtos forem adicionados finalizo a compra e tiro um screenshot da página</doc>
+<tag>produtos</tag>
+<status status="PASS" starttime="20240123 11:45:47.703" endtime="20240123 11:45:58.428"/>
 </test>
-<status status="PASS" starttime="20240119 11:33:01.121" endtime="20240119 11:33:11.802"/>
+<status status="PASS" starttime="20240123 11:45:47.250" endtime="20240123 11:45:58.436"/>
 </suite>
 <statistics>
 <total>
 <stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="1" fail="0" skip="0">menus</stat>
+<stat pass="1" fail="0" skip="0">produtos</stat>
 </tag>
 <suite>
 <stat pass="1" fail="0" skip="0" id="s1" name="Swaglabs Testes">Swaglabs Testes</stat>

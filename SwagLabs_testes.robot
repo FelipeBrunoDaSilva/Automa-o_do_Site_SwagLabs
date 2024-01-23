@@ -2,7 +2,7 @@
 Documentation
 Resource          Swaglabs_resource.robot
 Test Setup        Abrir o navegador
-Test Teardown     fechar navegador
+# Test Teardown     fechar navegador
 
 *** Test Cases ***
 
@@ -22,10 +22,14 @@ Caso de teste 02 - Escolher produto
     E escolher o produto desejado
     E adicionado com sucesso     
 Caso de teste 03 - Adicionar todos os produtos
-    [Documentation]    Nessa Keyword é pra fazer login, senha e adicionar todos os produtos no carrinho  
+    [Documentation]    Nessa Keyword é pra fazer login, senha e adicionar todos os produtos no carrinho, quando os produtos forem adicionados finalizo a compra e tiro um screenshot da página 
     [Tags]    produtos 
     Dado que esteja na home page do site 
     Quando preencher os dados de login e senha 
     Então login realzado com sucesso 
     E adicionar todos os produtos
     E produtos adicionado com sucesso
+    E fazer checkout
+    E Preencher First Name, Last Name e Postal Code
+    E clicar compra realizada com sucesso
+    Entao finalizo compra
