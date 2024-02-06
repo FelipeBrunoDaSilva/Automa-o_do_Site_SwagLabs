@@ -7,6 +7,8 @@ ${URL}                  https://www.saucedemo.com
 ${USERNAME_LOGIN}       standard_user
 ${USERNAME_PASSOWORD}   secret_sauce
 ${POSTAL_CODE}          00000-430
+${LOGIN_BLOQUEADO}      locked_out_user 
+   
     
 
 *** Keywords ***
@@ -59,3 +61,12 @@ E clicar compra realizada com sucesso
 Entao finalizo compra
     Click Button    locator=//button[@class='btn btn_action btn_medium cart_button'][contains(.,'Finish')]   
     Capture Page Screenshot 
+
+
+Quando preencher os dados de login e senha bloqueado        
+    Input Text    locator=//input[contains(@placeholder,'Username')]      text=${LOGIN_BLOQUEADO}
+    Input Password    locator=//input[contains(@placeholder,'Password')]    password=${USERNAME_PASSOWORD}
+
+Então login não realizado 
+    Click Button    locator=//input[contains(@type,'submit')]
+    Capture Page Screenshot
