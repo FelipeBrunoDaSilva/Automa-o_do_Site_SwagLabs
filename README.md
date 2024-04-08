@@ -1,5 +1,3 @@
-# README
-
 Este é um conjunto de casos de teste escritos para o site Swaglabs. Aqui está uma breve descrição de cada caso de teste:
 
 1. Caso de teste 01 - Fazer login**: Este caso de teste é para abrir o navegador e preencher os dados de login e senha. O objetivo é verificar se o login é realizado com sucesso.
