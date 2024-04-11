@@ -1,5 +1,8 @@
 Este é um conjunto de casos de teste escritos para o site Swaglabs. Aqui está uma breve descrição de cada caso de teste:
 
+
+
+
 1 - Caso de teste 01 - Fazer login**: Este caso de teste é para abrir o navegador e preencher os dados de login e senha. O objetivo é verificar se o login é realizado com sucesso.
 
 2 - Caso de teste 02 - Escolher produto**: Este caso de teste é para fazer login, senha e adicionar 1 produto no carrinho. O objetivo é verificar se o produto é escolhido e adicionado com sucesso.
